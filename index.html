@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSV Editor</title>
+  <script type="module" src="csv-edit.js"></script>
+  <link rel="stylesheet" href="csv-edit.css">
+</head>
+<body>
+    <h1>CSV Editor</h1>
+    
+    <!-- Input CSV file -->
+    <input type="file" id="csvFile" accept=".csv">
+    
+    <!-- CSV data table -->
+    <table id="dataTable"></table>
+    
+    <!-- Buttons -->
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="addColumn()">Add Column</button>
+    <button onclick="createCSV()">Create New CSV</button>
+    <button onclick="saveCSV()">Save</button>
+    
+    <script>
+        document.getElementById('csvFile').addEventListener('change', loadCSV);
+    </script>
+</body>
+</html>
