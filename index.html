@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>CSV Editor</title>
-  <script type="module" src="csv-edit.js"></script>
   <link rel="stylesheet" href="csv-edit.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
     <button onclick="addColumn()">Add Column</button>
     <button onclick="createCSV()">Create New CSV</button>
     <button onclick="saveCSV()">Save</button>
-    
+    <script type="module" src="csv-edit.js"></script>
     <script>
         document.getElementById('csvFile').addEventListener('change', loadCSV);
     </script>
