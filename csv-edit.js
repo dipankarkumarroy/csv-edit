@@ -156,3 +156,4 @@
             selectedCell = cell;
         }
     
+document.getElementById('csvFile').addEventListener('change', loadCSV);
